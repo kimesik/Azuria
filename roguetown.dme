@@ -2096,6 +2096,7 @@
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\trader\scholar.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\wretch\ancient_deathknight.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\wretch\ancient_spellblade.dm"
+#include "code\modules\jobs\job_types\roguetown\adventurer\types\wretch\antipope.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\wretch\berserker.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\wretch\deserter.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\wretch\heretic.dm"

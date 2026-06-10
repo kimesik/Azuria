@@ -129,7 +129,7 @@
 	taste_description = "sin"
 
 /datum/reagent/medicine/loversruin/on_mob_life(mob/living/carbon/M)
-	if(HAS_TRAIT(M, TRAIT_CRACKHEAD))
+	if(HAS_TRAIT(M, TRAIT_CRACKHEAD) || HAS_TRAIT(M, TRAIT_GODHAND))
 		if(volume >= 10)
 			M.reagents.remove_reagent(/datum/reagent/medicine/loversruin, 2)
 		if(M.blood_volume < BLOOD_VOLUME_NORMAL)

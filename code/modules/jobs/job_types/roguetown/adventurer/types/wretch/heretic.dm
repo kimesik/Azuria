@@ -2,7 +2,7 @@
 	name = "Heretic"
 	tutorial = "You father your unholy cause through the most time-tested of ways: hard, heavy steel in both arms and armor."
 	allowed_sexes = list(MALE, FEMALE)
-	
+
 	outfit = /datum/outfit/job/roguetown/wretch/heretic
 	class_select_category = CLASS_CAT_CLERIC
 	category_tags = list(CTAG_WRETCH)
@@ -510,8 +510,8 @@
 	if (!H.restrained())
 		to_chat(src, span_warning ("My victim needs to be restrained in order to do this!"))
 		return
-	if(!istype(S, /obj/item/clothing/neck/roguetown/psicross/inhumen/aalloy))
-		to_chat(src, span_warning("I need to be holding a zcross to extract this divination!"))
+	if(!istype(S, /obj/item/clothing/neck/roguetown/psicross/inhumen/))
+		to_chat(src, span_warning("I need to be holding an inhumen amulet to extract this divination!"))
 		return
 	for(var/obj/structure/fluff/psycross/zizocross/N in oview(5, src))
 		found = N
@@ -521,9 +521,9 @@
 	if(!H.stat)
 		var/static/list/faith_lines = list(
 			"THE TRUTH SHALL SET YOU FREE!",
-			"WHO IS YOUR GOD!?",
-			"ARE YOU FAITHFUL!?",
-			"WHO IS YOUR SHEPHERD!?",
+			"WHO IS YOUR MASTER!?",
+			"WHOM DO YOU FEAR!?",
+			"WHO IS YOUR LORD!?",
 		)
 		src.visible_message(span_warning("[src] shoves the decrepit zcross into [H]'s lux!"))
 		say(pick(faith_lines), spans = list("torture"))

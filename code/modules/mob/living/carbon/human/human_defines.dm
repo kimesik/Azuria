@@ -199,6 +199,8 @@
 	COOLDOWN_DECLARE(priest_curse)
 	COOLDOWN_DECLARE(priest_change_miracles)
 	COOLDOWN_DECLARE(hag_transform_lockout)
+	COOLDOWN_DECLARE(evil_priest_sermon)
+	COOLDOWN_DECLARE(evil_priest_announcement)
 
 	/// bait stacks for aimed intent
 	var/bait_stacks

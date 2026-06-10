@@ -1449,6 +1449,29 @@
 	AddComponent(/datum/component/armour_filtering/negative, TRAIT_HONORBOUND)
 	AddComponent(/datum/component/armour_filtering/negative, TRAIT_FENCERDEXTERITY)
 
+/obj/item/clothing/head/roguetown/helmet/heavy/heresiarch
+	name = "God Hand's visage"
+	desc = "A headdress woven out of profane cloth, accompanied by a steel mask and a crown of flowers that never wilt. Quiet, unintelligible whispers emanate from it."
+	icon_state = "heresiarchhelm"
+	item_state = "heresiarchhelm"
+	emote_environment = 3
+	body_parts_covered = FULL_HEAD|NECK
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	block2add = FOV_BEHIND
+	armor_class = ARMOR_CLASS_LIGHT //The exception. Only one exists, and it may be used only by Heresiarch.
+	max_integrity = ARMOR_INT_HELMET_ANTAG
+	material_category = ARMOR_MAT_PLATE
+	smeltresult = /obj/item/ingot/component/zizo
+	detail_tag = "_detail"
+	altdetail_tag = "_detailalt"
+	color = "#FFFFFF"
+	detail_color = "#FFFFFF"
+	altdetail_color = "#FFFFFF"
+
+/obj/item/clothing/head/roguetown/helmet/heavy/heresiarch/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/cursed_item, TRAIT_GODHAND, "VISAGE")
+
 /obj/item/clothing/head/roguetown/helmet/heavy/avantyne
 	name = "avantyne-threaded veil"
 	desc = "A veil threaded from an otherworldly alloy, perpetually backlit with an eerie crimson haze. Glimpse into the abyss for too \
