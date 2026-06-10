@@ -2,7 +2,7 @@
 //Locked to Inhumen. Powerful support class with, however, limited combat potential.
 //Gets the ability to torture, combined with EVIL sermons, ability to contact co-believers of same patron and some extra miracles from other Inhumen patrons.
 #define EVIL_PRIEST_SERMON_COOLDOWN (30 MINUTES)
-#define EVIL_PRIEST_ANNOUNCEMENT_COOLDOWN (2 MINUTES)
+#define EVIL_PRIEST_ANNOUNCEMENT_COOLDOWN (5 MINUTES)
 /datum/advclass/wretch/antipope
 	name = "Heresiarch"
 	tutorial = "They are pretentious. They are weak. They are complacent. And they are hopeless. But you. You will change this. \
